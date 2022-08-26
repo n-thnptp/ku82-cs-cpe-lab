@@ -10,10 +10,10 @@ height = int(input("Enter height: "))
 s = 2
 i = 0
 while i < height:
-    print((" " * ((height*2) - s)) + "1", end = "")
+    print((" " * ((height*2) - s)) + "1", end = "") # (5 * 2) - 2 = 8
     
     if i >= 1:
-        print((" " * ((i * 4) - 1) + "1"), end = "")
+        print((" " * ((i * 4) - 1) + "1"), end = "") # (1 * 4) - 1 = 3 ; (2 * 4) - 1 = 7
     print()
     
     s += 2
