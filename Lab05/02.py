@@ -28,36 +28,3 @@ else:
         else: # if total hours is over 5 hours
             cost = 40 + ((total_h - 4) * 50)
             print("Total amount due is {} Baht, thank you.".format(cost))
-
-    
-
-    # elif total_h <= 3:
-
-    #     if 300 <= buyAmt <= 3000:
-    #         print("No charge, thank you.")
-    #     else:
-    #         print("Total amount due is 20 Baht, thank you.")
-
-    # elif total_h <= 4:
-
-    #     if 300 <= buyAmt <= 3000:
-    #         print("No charge, thank you.")
-    #     else:
-    #         print("Total amount due is 40 Baht, thank you.")
-            
-
-    # elif total_h <= 5:
-
-    #     if buyAmt <= 3000:
-    #         cost = (total_h - 4) * 50
-    #         print("Total amount due is {} Baht, thank you.".format(cost))
-    #     elif buyAmt > 3000:
-    #         print("No charge, thank you.")
-
-    # elif total_h > 5:
-
-    #     if buyAmt <= 3000:
-    #         cost = 40 + ((total_h - 4) * 50)
-    #         print("Total amount due is {} Baht, thank you.".format(cost))
-    #     elif buyAmt >= 3001:
-    #         print("No charge, thank you.")
