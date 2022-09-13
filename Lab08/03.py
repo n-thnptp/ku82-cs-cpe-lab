@@ -4,7 +4,7 @@ def simple_interest(p, r, t):
     return total
 
 def compound_interest(p, r, t):
-    c_interest = (p * ((1 + r/100) ** t))
+    c_interest = (p * ((1 + r/100) ** t)) - p
     total = c_interest + p
     return total
 
