@@ -1,0 +1,7 @@
+xy1 = input()
+ls_1 = xy1.split(",")
+xy2 = input()
+ls_2 = xy2.split(",")
+result = float(ls_1[0]) + float(ls_2[0])
+result_2 = float(ls_1[1]) + float(ls_2[1])
+print("{},{}".format(result, result_2))
