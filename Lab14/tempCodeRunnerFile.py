@@ -1,1 +1,1 @@
-Fe3H2Na2O45Si
+print(asm_dict)

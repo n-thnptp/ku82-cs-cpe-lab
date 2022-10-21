@@ -1,5 +1,5 @@
 var = {}
-prog = []
+program = []
 
 print("Enter variables and values:")
 while True:
@@ -13,28 +13,15 @@ while True:
         
 print("Enter your program:")
 while True:
-    prog_in = input()
+    program_in = input()
     
-    if prog_in == "-1":
+    if program_in == "-1":
         break
     else:
-        prog.append(prog_in)
+        program.append(program_in)
         
 print("Result:")
-v_keys = list(var.keys())
-output = []
-z = ""
-for p in prog:
-    for keys in v_keys:
-        if z == "":
-            z = p.replace("{"+keys+"}", str(var.get(keys)))
-            if z.find("{") == -1 and z not in output:
-                output.append(z)
-        else:
-            z = z.replace("{"+keys+"}", str(var.get(keys)))
-            if z.find("{") == -1 and z not in output:
-                output.append(z)
-    z = ""
-    
-for o in output:
-    print(o)
+for p in program:
+    for key, value in var.items():              # eg. dict_items([('x', '5'), ('y', '6')])
+        p = p.replace("{"+key+"}", value)       # assigned [('key', 'value')]
+    print(p)
