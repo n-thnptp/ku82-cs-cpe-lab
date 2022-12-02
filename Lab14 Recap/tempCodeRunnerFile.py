@@ -1,8 +1,8 @@
-n2_found = []
-for v_2 in range(len(name_2)):
-    if name_2[v_2] in 'aeiou':
-        n2_found.append(v_2)
-    
-result += name_2[n2_found[0]+1:]
+msg = input()
+move = int(input())
+move = (move*-1) % len(msg)
 
-print(result)
+output = ""
+output += msg[move:] + msg[:move]
+
+print(output)
